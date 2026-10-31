@@ -15,10 +15,14 @@ tp4lab1jee2/
 ├── pom.xml
 ├── .gitignore
 ├── README.md
+├── img.png
+├── img_1.png
+├── img_2.png
 ├── docs/screenshots/
 └── src/main/
     ├── java/com/example/
     │   ├── App.java
+    │   ├── Main.java
     │   └── model/
     │       ├── singletable/   (Vehicule, Voiture, Moto)
     │       ├── joined/        (Employe, Developpeur, Manager)
@@ -75,7 +79,7 @@ Les commandes suivantes sont à lancer toi-même depuis le dossier contenant ce 
 ### 1. Vérifier les outils
 
 ```powershell
-cd C:\Users\asus\Desktop\tp4lab1jee2
+# Se placer dans le dossier clone contenant pom.xml.
 java -version
 mvn -version
 ```
@@ -96,7 +100,7 @@ Le résultat attendu est `BUILD SUCCESS`, avec un JAR dans `target/`. Cette éta
 mvn exec:java
 ```
 
-Alternative dans l'IDE : lancer `com.example.App` comme application Java, avec les ressources et dépendances Maven dans le classpath.
+Alternative dans l'IDE : lancer `com.example.App` ou `com.example.Main` comme application Java, avec les ressources et dépendances Maven dans le classpath. `Main` appelle la démonstration de `App`.
 
 Contrôler les points suivants dans la console :
 
@@ -120,7 +124,7 @@ Ces éléments sont des résultats attendus à vérifier localement, pas des ré
 
 ### 5. Préparer les captures et le dépôt
 
-Placer les captures PNG dans `docs/screenshots/`, avec les noms `01.png` à `06.png`. Dans les cellules de la section finale, retirer les marqueurs de commentaire HTML autour de chaque balise `img` pour afficher les photos. Les emplacements ne contiennent aucune légende.
+Les trois captures sont placées à la racine du projet : `img.png`, `img_1.png` et `img_2.png`. Pour en ajouter, déposer les nouvelles images dans le projet et ajouter leurs liens dans la section finale, sans légende.
 
 Créer un dépôt GitHub vide. Si ce dossier constitue un nouveau dépôt indépendant, exécuter :
 
@@ -144,6 +148,8 @@ Si le dossier appartient déjà à un dépôt existant, utiliser ce dépôt et s
 
 ## Captures d'écran
 
-![img.png](img.png)
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
+![](img.png)
+
+![](img_1.png)
+
+![](img_2.png)
